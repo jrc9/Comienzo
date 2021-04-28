@@ -1,0 +1,9 @@
+Dentro del body va todo, title es lo que aparece en la pestaña.
+
+Hay que etiquetar con las <h> dependiendo de los títulos
+
+<header> es a cabecera de la pagina (Menu, logotipo, redes sociales)
+<main> la parte principal de la página
+<footer> es el pie de pagina(lo de hasta abajo)
+<section> es un agrupamiento del contenido de la página
+<article> es un contenedor de la pagina con contenido independiente a la pagina(puede ser post de for,noticias, comentarios)
