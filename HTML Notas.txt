@@ -7,3 +7,128 @@ Hay que etiquetar con las <h> dependiendo de los títulos
 <footer> es el pie de pagina(lo de hasta abajo)
 <section> es un agrupamiento del contenido de la página
 <article> es un contenedor de la pagina con contenido independiente a la pagina(puede ser post de for,noticias, comentarios)
+<aside> contenido relacionado a la pagina pero que no forma parte de lo principal de la misma
+
+
+--------ELEMENTOS DE LINEA----------------------
+<span> es un elemento de linea no de bloque
+em------>emphasis(las pone en cursiva)
+strong--->mas enfasis(lo pone en negrita)
+small---->menos enfasis que el texto normal(se pone poquito mas pequeño el texto ya que no es relevante)
+br------->Forza un salto de linea
+wbr------>Salto de linea solo si hace falta
+time----->para contenido de hora/fecha
+i--------> italic y sirve para poner iconos
+b--------> bold
+u--------> underline
+sup------> superindice------para potencias
+sub------> subindice--------como para H202
+--------------------------------------------------
+
+-------------ATRIBUTOS------------------------------------
+
+class -> Para dar estilos a traves de class
+id -> Se usa para seleccionar el elemento desde JS y hacer navegación
+title -> Ayuda a la accesibilidad mostando una descripcion del elemento al que pertenece
+data-* -> Nos permite guardar un valor en una etiqueta de HTML, est evalor se guarda en el backend
+
+-------------ENLACES---------------------------------------
+
+ <a href="Segundo.html">Ir a Ancla</a> 
+
+ ----------------------------------------------------------
+
+ ------------RUTAS ABSOLUTAS Y RELATIVAS---------------------------------
+ 
+ para salir a internet hay que especificar el protocolo http en la href
+
+ ../ para retroceder en carpetas 
+
+  Si empezamos la ruta con / se va a la raiz de la carpeta
+
+  ----ATRIBUTOS DE LOS ENLACES-------------------------------
+
+<a href="Segundo.html" target="_blank">Ir a Ancla</a>   esto sirve oara abrir la ruta en una nueva pestaña
+
+<a href="Segundo.html" download>Ir a Ancla</a>       Te descarga el archivo de la ruta a tu compu pero el archivo debe estar en nuestro server
+
+
+----------NAVEGACION CON ANCLAS-----------------------------------
+
+<a href="#post-1">Post 1</a>    post-1 debe de ser el id del article al que se quiere apuntar, solo se debe agregar el # antes del nombre del id
+<a href="/carpeta/index.html#post-1">Post 1</a>  en caso de moverte a un archivo y de ahi a un id 
+
+----------------LISTAS--------------------------------------------
+
+ul -> listas desordenadas
+ol -> listas ordenadas
+dl -> lista de definiciones(diccionario)
+li -> es para cada elemento de la lista
+
+---------LISTAS DESORDENADAS-------------------------------------
+Un caso de uso practico es un Menu
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Pan</a></li>
+            <li><a href="index.html">Huevo</a></li>
+            <li><a href="index.html">Leche</a></li>
+            <li><a href="index.html">Harina</a></li>
+            <li><a href="index.html">Royal</a></li>
+        </ul>
+    </nav>
+
+--------LISTAS ORDENADAS-------------------------------------------
+
+
+    <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ol>
+
+---------LISTAS DE DEFINICION---------------------------------------
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium maiores numquam ea hic mollitia unde magnam, officiis vitae odit, enim ducimus debitis consectetur, voluptatem repellat exercitationem ut totam ex reprehenderit.</dd>
+        <dt>CSS</dt>
+        <dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium maiores numquam ea hic mollitia unde magnam, officiis vitae odit, enim ducimus debitis consectetur, voluptatem repellat exercitationem ut totam ex reprehenderit.</dd>
+    </dl>
+
+--------LISTAS ANIDADAS Y ATRIBUTOS---------------------------------
+
+atributos:
+ol -> type: Estilo de numeracion
+   -> start: Inicio de secuencia
+
+ul -> type: Estilo de los items
+
+-----------TABLAS--------------------------------------------------
+
+ table -> etiqueta que encierra una TABLAS
+ tr    ->   table row, construye una fila
+ td    ->   table data, construye una celda
+ tbody ->   encierra el cuerpo de la tabla, lo qu eno es cabecera
+ tfoot ->   no es necesraio pero es el pie de la tabla
+ 
+ <caption>HORARIO DE CLASES</caption> va despues de table y es para el titulo de la TABLAS
+
+ Para la cabecera de la tabla:
+ <thead>
+                <tr>
+                    <th></th>
+                    <th>LUNES</th>
+                    <th>MARTES</th>
+                    <th>MIERCOLES</th>
+                    <th>JUEVES</th>
+                    <th>VIERNES</th>
+                </tr>
+</thead>
+
+
+
+
+
+
+
