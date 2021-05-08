@@ -111,7 +111,11 @@ ul -> type: Estilo de los items
  td    ->   table data, construye una celda
  tbody ->   encierra el cuerpo de la tabla, lo qu eno es cabecera
  tfoot ->   no es necesraio pero es el pie de la tabla
- 
+rowspan->   para que una celda ocupe mas de una fila, es un atributo
+colspan->  para que una celda ocupe mas de una columna, es un atributos
+
+
+
  <caption>HORARIO DE CLASES</caption> va despues de table y es para el titulo de la TABLAS
 
  Para la cabecera de la tabla:
@@ -125,6 +129,60 @@ ul -> type: Estilo de los items
                     <th>VIERNES</th>
                 </tr>
 </thead>
+
+Para agrupar columnas:
+<colgroup>
+    <col span=5>
+    <col>
+</colgroup>
+
+
+-------------ETIQUETAS DE BLOQUE------------------
+address -> info de contacto para el article o el body
+blockquote ->para marcar citas de otros autores
+pre -> para que salga como se escribio en el HTML 
+div -> contenedor para division de contenido
+hr -> para decirle al navegador que se cambiara de tema(pone una linea en el navegador)
+
+-----------ETIQUETAS DE LINEA---------------------
+span -> contenedor de linea, equivale a div
+q -> equivalente a blockquote
+code -> para decirle al navegador que es codigo que va a estar visualmente
+
+-----------------FORMULARIOS-----------------------
+Estructura básica:
+form -> etiqueta que engloba nuestro formulario
+label -> para escribir el nombre del campo a rellenar
+input -> para creae un campo que permite al usuario interactuar
+button -> crea un boton que permite enviar el formulario
+
+
+----------------TIPOS DE INPUT--------------------
+<input type="button" value="Enviar">
+
+button -> en un boton
+color ->
+date ->
+datetime-local ->
+email ->
+hidden -> campo oculto
+month ->
+number ->
+password ->
+range -> 
+reset -> para resetear el formulario
+search ->
+submit ->
+tel ->
+text ->
+time ->
+url ->
+week ->
+
+
+
+
+
 
 
 
