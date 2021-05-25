@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica</title>
+</head>
+<body>
+
+    <header>
+
+            <h1>SELECT, IMÁGENES, VIDEOS Y AUDIO</h1>
+            <span> Inicio Noticias Momios Deporte Contacto </span>
+
+    </header>
+
+<div>
+
+
+    <fieldset>
+        <legend>Formulario de ejemplo</legend>
+
+            <form action="Ejemplo.html" method="GET">
+
+                <label for="Equipo">Equipo</label>
+                    <select name="Equipos" id="Equipo">
+                        <option value="Barca">Barca</option>
+                        <option value="Madrid">Madrid</option>
+                        <option value="Morelia">Morelia</option>
+                    </select>
+               
+
+                <label for="Texto">Texto</label>
+                <input type="text" ID="Texto">
+                <label for="numero">Número</label>
+                <input type="number" placeholder="Numero de casa" id="numero">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" name="telefono" required minlength="10" maxlength="10" id="telefono">
+                <br>
+                <input type="submit">
+            
+            </form>
+
+    </fieldset>
+</div>
+
+<div>
+
+    <h2>Imagenes</h2>
+    <fieldset>
+        <legend>Imágenes</legend>
+        <img src="./assets/imagen.jpg" alt="Imagen de prueba" width="320" height="240">
+    </fieldset>
+    <h2>Videos</h2>
+    <fieldset>
+        <legend>Video</legend>
+        <video src="./assets/Video.mp4" width="320" height="240" controls></video>
+    </fieldset>
+    <fieldset>
+    <legend>Iframe</legend>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/AjSsST273Vc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </fieldset>    
+
+</div>
+    
+</body>
+</html>

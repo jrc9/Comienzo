@@ -148,7 +148,7 @@ hr -> para decirle al navegador que se cambiara de tema(pone una linea en el nav
 span -> contenedor de linea, equivale a div
 q -> equivalente a blockquote
 code -> para decirle al navegador que es codigo que va a estar visualmente
-
+s
 -----------------FORMULARIOS-----------------------
 Estructura básica:
 form -> etiqueta que engloba nuestro formulario
@@ -178,6 +178,119 @@ text ->
 time ->
 url ->
 week ->
+
+
+---------------Inputs radio-----------------
+radio-> permiten seleccinar una opcion de varias
+
+<input type="radio" name="gender" value="femenino">
+el name es para identificar a los radios que son del mismo tipo para que solo podamos seleccionar uno y el value para saber que valor se selecciono
+
+---------------input checkbox-------------------
+Nos permite seleccionar varias opciones de una lista
+ <input type="checkbox" name="languages" value"HTML">
+
+
+ ---------------select------------------------------
+ mezcla entre radio y checkbos
+
+<select name="languajes" multiple> ----------------el multiple permite seleccionar varios
+
+    <option value="html">HTML</option>
+    <option value="CSS">css</option>
+
+
+</select>
+
+----------------Select Avanzado--------------------------
+<optgroup></optgroup>--------encierras los option del select y te permite separar por categorias
+
+----------------Datalist-----------------------------------
+Es una lista pero te permite hacer busquedas y te filtra la busquedas
+<input type="list" list="pets">
+    <datalist id="pets">
+        <option value="html">HTML</option>
+        <option value="CSS">css</option>
+    </datalist>
+
+-------------Extras de formularios----------------------------
+fielset->Agrupa elementos en un formulario
+legend-> para poner un label al fielset
+progress-> representa el progreso de una tarea
+textarea-> para meter texto a un formulario
+
+----------Atributos en los formularios-------------------
+placeholder----->da una pista al usuario de que introducir
+required-------->obliga al usuario a rellenar un campo
+readonly-------->convierte un campo en solo lectura
+disabel---------> es como readonly pero si enviamos el form en disable no se envia 
+min-max---------> minimo y maximo de un campo numeracion
+minlenght-maxlenght->minimo y maximo de caracteres
+selected--------> marcas una opcion por defecto, tu decides cual
+autofocus-------> Para poner el foco por defecto al cargar el formulario, para darle mas importancia a un campo que se requiera llenar en el form
+
+
+---------------ENVIO GET VS POST---------------------------
+GET Envia los formularios por URL y el POST los manda ocultamente en el backend
+
+<form action="enviar.html" method="POST">
+
+
+---------------Contenido Embebido---------------------------
+Es todo el contenido que traemos desde fuera(imagenes, audio,video, iframes).
+
+Imagenes(vectoriales y de bits)
+    Vectoriales son formato svg y no añaden peso a la pagina web
+    Bits(jpg,ong,gif y webp)
+
+---------------Imagenes en HTML---------------------------------
+
+<img src="/assets/images" alt="descripcion del uso de la imagen"
+
+---------------Device pixel ratio--------------------------------
+Se necesita para hacer sitios responsivos 
+
+---------------Picture-------------------------------------------
+Se necesita para hacer sitios responsivos 
+
+--------------Audio---------------------------------------------
+<audio> </audio>
+-------------Video---------------------------------------------
+<video></video>
+
+-------------iframe----------------------------------------------
+sirve para jalar codigo de otra pagina a la nuestra, el problema es que nos consume muchos recursos
+
+------------meta------------------------------------------------
+<meta name"" content""></meta>
+
+-----------fontawesone-----------------------------------------
+ es para poner iconos en nuestra web
+
+ ---------Atributos de accesibilidad----------------------------
+ <p tabindex=""> Parrafo </p>
+
+ Nos sirve para viajar e indicar a donde ir en la pagina mediante TABULADORES
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
